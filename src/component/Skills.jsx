@@ -37,7 +37,7 @@ const SkillsWrap = styled.div`
       gap: 7px;
       padding: 0 5px;
       color: #000;
-      background: rgba(255, 255, 255, 1);
+      background: #fff;
       border-radius: 5px;
       justify-content: center;
       align-items: center;
