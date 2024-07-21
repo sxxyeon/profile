@@ -48,7 +48,14 @@ const SkillsWrap = styled.div`
   }
 
   @media only screen and (max-width: 1000px) {
-    padding: 0 5%;
+    padding: 50px 5% 0;
+    ul {
+      li {
+        img {
+          width: 20px;
+        }
+      }
+    }
   }
 `;
 

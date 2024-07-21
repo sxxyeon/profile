@@ -24,7 +24,7 @@ const Wrap = styled.div`
   @media only screen and (max-width: 1000px) {
     padding: 100px 5%;
     .wavy-text-container {
-      font-size: 4rem !important;
+      font-size: 3rem !important;
       span {
         line-height: 5rem !important;
       }

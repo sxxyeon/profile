@@ -32,7 +32,8 @@ const CareerWrap = styled.div`
       ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        line-height: 23px;
       }
     }
     p {

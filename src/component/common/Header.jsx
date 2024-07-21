@@ -7,6 +7,7 @@ const HeaderWrap = styled.header`
   top: 0;
   z-index: 10;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 100%;
   border-bottom: 1px solid #fff;
   height: 50px;
