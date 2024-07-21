@@ -95,8 +95,11 @@ html,body,#root{
     font-size: 50px;
     font-weight: 900;
   }
-  footer{
-
+  @media only screen and (max-width: 1000px) {
+    h2.title{
+    font-size: 40px;
+    font-weight: 900;
+  }
   }
 
   @keyframes fade-in {
@@ -105,28 +108,6 @@ html,body,#root{
     }
     100% {
       opacity: 1;
-    }
-  }
-
-  @keyframes circle {
-    0%,
-    100% {
-      top: 0;
-      right: 0;
-    }
-
-    50% {
-      top: calc(100% - 600px);
-      right: calc(100% - 200px);
-    }
-  }
-
-  @keyframes line {
-    0% {
-      border-width: 0px;
-    }
-    100% {
-      border-width: 100%;
     }
   }
 `;
