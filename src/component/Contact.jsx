@@ -14,13 +14,13 @@ const ContactWrap = styled.div`
     gap: 10%;
     .left_info {
       p {
-        padding: 15px 0;
+        padding: 13px 0;
         word-break: break-all;
       }
     }
     .right_info {
       p {
-        padding: 15px 0;
+        padding: 13px 0;
         word-break: break-all;
       }
     }
@@ -29,6 +29,7 @@ const ContactWrap = styled.div`
     padding: 0 5% 100px;
     .contact_info {
       flex-direction: column;
+      gap: 0;
     }
   }
 `;

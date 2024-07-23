@@ -92,12 +92,12 @@ html,body,#root{
     box-sizing: border-box;
   }
   h2.title{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
   }
   @media only screen and (max-width: 1000px) {
     h2.title{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 900;
   }
   }

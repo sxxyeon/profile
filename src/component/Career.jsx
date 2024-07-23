@@ -15,13 +15,13 @@ const CareerWrap = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 3rem 0 0;
+    padding: 2.5rem 0 0;
     .info_top {
       display: flex;
       flex-direction: column;
       gap: 10px;
       h3 {
-        font-size: ${(props) => props.theme.fontSize.xl};
+        font-size: ${(props) => props.theme.fontSize.lg};
         font-weight: 900;
       }
     }

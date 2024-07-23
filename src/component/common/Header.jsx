@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { useState } from "react";
 
@@ -16,7 +17,7 @@ const HeaderWrap = styled.header`
   background: transparent;
 
   .header_cont {
-    max-width: 1040px;
+    max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
     display: flex;
@@ -29,6 +30,12 @@ const HeaderWrap = styled.header`
         display: flex;
         flex-direction: row;
         gap: 20px;
+        li {
+          a {
+            font-weight: 500 !important;
+            cursor: pointer;
+          }
+        }
       }
     }
     .header_right {
@@ -36,6 +43,30 @@ const HeaderWrap = styled.header`
         display: flex;
         flex-direction: row;
         gap: 20px;
+        li {
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .header_cont {
+      justify-content: center;
+      .header_left {
+        display: none;
+        ul {
+          display: flex;
+          flex-direction: row;
+          gap: 10px !important;
+        }
+      }
+
+      .header_right {
+        ul {
+          gap: 10px !important;
+        }
       }
     }
   }
@@ -93,12 +124,19 @@ const Header = () => {
           <div className="header_cont">
             <div className="header_left">
               <ul>
-                {/* <li>
-                <Link>github</Link>
-              </li>
-              <li>
-                <Link>velog</Link>
-              </li> */}
+                <li>
+                  <RouterLink to={"https://github.com/sxxyeon"} target="_blank">
+                    github
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink
+                    to={"https://velog.io/@sxxyeon/posts"}
+                    target="_blank"
+                  >
+                    velog
+                  </RouterLink>
+                </li>
               </ul>
             </div>
             <div className="header_right">

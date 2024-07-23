@@ -26,7 +26,7 @@ const Wrap = styled.div`
     .wavy-text-container {
       font-size: 3rem !important;
       span {
-        line-height: 5rem !important;
+        line-height: 4rem !important;
       }
     }
   }
@@ -81,7 +81,6 @@ const Home = () => {
           <br />
           DEVELOPER
         </motion.span>
-        <br />
         <motion.span className="name" variants={child}>
           KIM SUYEON
         </motion.span>

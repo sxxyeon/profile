@@ -14,7 +14,7 @@ const ProjectWrap = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 3rem 0 0;
+    padding: 2.5rem 0 0;
     .info_top {
       display: flex;
       flex-direction: column;
@@ -31,7 +31,8 @@ const ProjectWrap = styled.div`
       ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        line-height: 23px;
       }
     }
     p {
@@ -54,12 +55,26 @@ const Project = ({ title }) => {
             <p>프로젝트 내용</p>
             <ul>
               <li>
-                B2B - 기업은행, 우리은행, 신한은행, 화이자 등 금융기관 및 기업
-                복지 폐쇄몰
+                healthy log - 다양한 건강관련 기능을 포함한 건강관리 앱.
+                식품의약품안전처의 공공 api와 카카오맵 api를 사용하였습니다.
               </li>
-              <li>B2C - 위비마켓(우리은행), 딜라이브몰, 꿀콘비즈</li>
-              <li>B0 , 자사 사이트 등</li>
-              <li>UI 구축 및 유지보수 업무 담당</li>
+              <li>
+                myvie - 영화 검색 및 영화공유 커뮤니티 앱. 찜하기, 관람평 달기,
+                로그인/회원가입등의 기능을 포함해 mdb api를 사용해서
+                구현하였습니다.
+              </li>
+              <li>
+                shopcode - 간단한 쇼핑몰 앱. 상품을 카테고리별로 분류하고,
+                장바구니에 넣는 등 일반적인 쇼핑몰 기능을 구현하였습니다.
+              </li>
+              <li>
+                gptherapy - gpt api를 이용한 심리상담 앱입니다. 사용자가 전송한
+                메세지에 기반한 상담 피드백을 구현했습니다.
+              </li>
+              <li>
+                profile - 프로필 사이트입니다. 다양한 동적인 효과를
+                적용하였습니다.
+              </li>
             </ul>
           </div>
         </div>

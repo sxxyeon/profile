@@ -14,7 +14,7 @@ const ModalWrap = styled.div`
 `;
 
 const Modal = styled.div`
-  position: fixed !important; /* Changed from absolute to fixed */
+  position: fixed !important;
   max-width: 500px;
   min-width: 350px;
   width: 60%;
@@ -56,6 +56,7 @@ const ModalInfo = styled.div`
   border-radius: 5px;
   box-sizing: border-box;
   .tit {
+    font-size: 1.4rem;
   }
   p {
     white-space: pre-line;
@@ -70,8 +71,7 @@ const ModalInfo = styled.div`
   }
   .desc {
     line-height: 30px;
-    padding-top: 30px;
-    max-height: 300px;
+    max-height: 200px;
     overflow-y: auto;
   }
   .desc::-webkit-scrollbar-track {
@@ -98,31 +98,38 @@ const ModalInfo = styled.div`
 const BtnBox = styled.div`
   display: flex;
   justify-content: center;
+  gap: 10px;
   padding: 20px 0 0;
   box-sizing: border-box;
   button {
     width: 70%;
     background: ${(props) => props.theme.colors.primary};
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
+    box-sizing: border-box;
     cursor: pointer;
     a {
       display: block;
-      padding: 20px;
+      padding: 15px 10px;
     }
+  }
+  button:nth-child(2) {
+    background: #fff;
+    color: ${(props) => props.theme.colors.primary};
+    border: 1px solid ${(props) => props.theme.colors.primary};
   }
 `;
 
 const ModalPopup = ({ modal, setIsModalOpen }) => {
-  const { id, title, skills, content, desc, img, url } = modal;
+  const { id, title, skills, content, desc, img, url, github } = modal;
   return ReactDOM.createPortal(
     <ModalWrap>
       <Modal className={id}>
         <div className="modal_top">
           <button onClick={() => setIsModalOpen(false)}>
-            <Icon icon="mdi:close" width={24} color={`#00B860`} />
+            <Icon icon="mdi:close" width={20} color={`#00B860`} />
           </button>
         </div>
         <div className="modal_cont">
@@ -132,13 +139,23 @@ const ModalPopup = ({ modal, setIsModalOpen }) => {
             <p className="skills">{skills}</p>
             <p className="desc">{desc}</p>
           </ModalInfo>
-          {url && (
-            <BtnBox>
+
+          <BtnBox>
+            {url && (
               <button>
-                <Link to={url}>방문하기</Link>
+                <Link to={url} target="_blank">
+                  방문하기
+                </Link>
               </button>
-            </BtnBox>
-          )}
+            )}
+            {github && (
+              <button>
+                <Link to={github} target="_blank">
+                  Github
+                </Link>
+              </button>
+            )}
+          </BtnBox>
         </div>
       </Modal>
     </ModalWrap>,
