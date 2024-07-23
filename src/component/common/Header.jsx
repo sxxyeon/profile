@@ -31,7 +31,7 @@ const HeaderWrap = styled.header`
       ul {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
         li {
           a {
             font-weight: 500 !important;
