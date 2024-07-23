@@ -19,7 +19,7 @@ const HeaderWrap = styled.header`
   .header_cont {
     max-width: 1200px;
     width: 100%;
-    padding: 0 20px;
+    //padding: 0 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
