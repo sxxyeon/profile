@@ -33,6 +33,7 @@ const Modal = styled.div`
     padding: 15px;
     button {
       cursor: pointer;
+      padding: 0;
     }
   }
   .modal_cont {
@@ -68,6 +69,7 @@ const ModalInfo = styled.div`
   .skills {
     padding: 20px 0;
     font-weight: 800;
+    line-height: 23px;
   }
   .desc {
     line-height: 30px;

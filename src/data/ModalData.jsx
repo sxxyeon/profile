@@ -33,6 +33,7 @@ export const careerArray = [
     skills: "HTML, SCSS, VUETIFY, JAVASCRIPT",
     img: "/img/kkulcon.png",
     url: "https://kkulconbiz.co.kr/",
+    github: "https://github.com/sxxyeon/kkulcon",
   },
   {
     id: 5,
@@ -50,7 +51,7 @@ export const projectArray = [
     id: 1,
     title: "헬시로그",
     content: "",
-    desc: "건강관리에 관심이 있어 식단에 신경을 쓰는 현대인을 타겟으로 제작한 앱입니다.\r\n 식품정보안정어쩌구 의 공공 api를 사용, 사용자가 검색한 식품에 대한 영양정보를 결과화면에 뿌려주는 검색기능, 나의 권장 소비칼로리를 계산하고 선택한 식품들의 칼로리 합산 결과를 비교해 설정한 내 목표 달성 여부를 알려주는 계산기 기능, 오늘의 식단일기를 작성할 수 있는 다이어리 기능, kakao맵 api를 사용, 사용자 위치기반 주변 건강식을 판매하는 식당을 보여주는 지도 기능, 건강에 관련된 정보를 제공하고, 글쓰기 수정 삭제 등 다른 유저들과 소통이 가능한 게시판 기능과 같은 다양하고 유용한 서비스를 제공하는 건강관리 앱입니다.\r\n  Json 서버를 사용해 restful api 에 대한 적응성을 높혔습니다.",
+    desc: "건강관리에 관심이 있어 식단에 신경을 쓰는 현대인을 타겟으로 제작한 앱입니다.\r\n 식품의약품안전처의 공공 api를 사용, 사용자가 검색한 식품에 대한 영양정보를 결과화면에 뿌려주는 검색기능, 나의 권장 소비칼로리를 계산하고 선택한 식품들의 칼로리 합산 결과를 비교해 설정한 내 목표 달성 여부를 알려주는 계산기 기능, 오늘의 식단일기를 작성할 수 있는 다이어리 기능, kakao맵 api를 사용, 사용자 위치기반 주변 건강식을 판매하는 식당을 보여주는 지도 기능, 건강에 관련된 정보를 제공하고, 글쓰기 수정 삭제 등 다른 유저들과 소통이 가능한 게시판 기능과 같은 다양하고 유용한 서비스를 제공하는 건강관리 앱입니다.\r\n  Json 서버를 사용해 restful api 에 대한 적응성을 높혔습니다.",
     skills: "REACT, SCSS, JAVASCRIPT",
     img: "/img/healthylog.png",
     url: "https://healthy-log.vercel.app/",

@@ -27,15 +27,16 @@ const HeaderWrap = styled.header`
     line-height: 50px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
     .header_left {
       ul {
         display: flex;
         flex-direction: row;
-        gap: 3% !important;
+        gap: 10px !important;
         li {
           a {
-            font-weight: 500 !important;
             cursor: pointer;
+            font-weight: 600;
           }
         }
       }
@@ -44,13 +45,15 @@ const HeaderWrap = styled.header`
       ul {
         display: flex;
         flex-direction: row;
-        gap: 3% !important;
+        gap: 10px !important;
         li {
           a {
             cursor: pointer;
-            padding: 0 5px !important;
+            padding: 0 5px;
+
             button {
               padding: 0 !important;
+              font-weight: 600;
             }
           }
         }
@@ -62,14 +65,11 @@ const HeaderWrap = styled.header`
       justify-content: center !important;
       .header_left {
         display: none;
-        ul {
-          gap: 0 !important;
-        }
       }
 
       .header_right {
         ul {
-          gap: 0 !important;
+          gap: 0;
         }
       }
     }
