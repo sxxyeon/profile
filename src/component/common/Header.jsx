@@ -31,7 +31,7 @@ const HeaderWrap = styled.header`
       ul {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 3% !important;
         li {
           a {
             font-weight: 500 !important;
@@ -44,7 +44,7 @@ const HeaderWrap = styled.header`
       ul {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 3% !important;
         li {
           a {
             cursor: pointer;
@@ -59,13 +59,13 @@ const HeaderWrap = styled.header`
       .header_left {
         display: none;
         ul {
-          gap: 7px !important;
+          gap: 3% !important;
         }
       }
 
       .header_right {
         ul {
-          gap: 7px !important;
+          gap: 3% !important;
         }
       }
     }
