@@ -59,13 +59,13 @@ const HeaderWrap = styled.header`
       .header_left {
         display: none;
         ul {
-          gap: 3% !important;
+          gap: 0 !important;
         }
       }
 
       .header_right {
         ul {
-          gap: 3% !important;
+          gap: 0 !important;
         }
       }
     }
