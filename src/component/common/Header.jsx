@@ -26,6 +26,7 @@ const HeaderWrap = styled.header`
     justify-content: space-between;
     line-height: 50px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     .header_left {
       ul {
         display: flex;
@@ -54,7 +55,7 @@ const HeaderWrap = styled.header`
   }
   @media only screen and (max-width: 1000px) {
     .header_cont {
-      justify-content: center;
+      justify-content: center !important;
       .header_left {
         display: none;
         ul {
