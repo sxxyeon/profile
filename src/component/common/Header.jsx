@@ -18,6 +18,7 @@ const HeaderWrap = styled.header`
 
   .header_cont {
     max-width: 1200px;
+    width: 100%;
     padding: 0 20px;
     margin: 0 auto;
     display: flex;
@@ -57,15 +58,13 @@ const HeaderWrap = styled.header`
       .header_left {
         display: none;
         ul {
-          display: flex;
-          flex-direction: row;
-          gap: 10px !important;
+          gap: 7px !important;
         }
       }
 
       .header_right {
         ul {
-          gap: 10px !important;
+          gap: 7px !important;
         }
       }
     }
