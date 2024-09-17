@@ -88,6 +88,16 @@ export const projectArray = [
   },
   {
     id: 4,
+    title: "vue 게시판",
+    content: "",
+    desc: "vue3를 활용한 간단한 게시판 앱입니다. 글 목록조회, 글 쓰기, 수정, 삭제 등의 기능이 가능하도록 구현하였습니다.",
+    skills: "VUE3, BOOTSTRAP, JAVASCRIPT",
+    img: "/img/vueboard.png",
+    url: "https://vue-board-six.vercel.app/#/",
+    github: "https://github.com/sxxyeon/vueBoard",
+  },
+  {
+    id: 5,
     title: "GPTherapy",
     content: "",
     desc: "chat GPT api를 사용하여 만든 심리상담 앱입니다.\r\n 사용자가 오늘 있었던 일을 입력하면, 미리 작성했던 프롬프트로 gpt api를 호출해 요약문, 회고문, 사용자가 느낀 감정, 심리 분석, 조언 등 사용자가 입력한 글에 기반하여 반응 글이 출력되도록 작업하였습니다. \r\n또한 html2canvas 를 사용, 해당 심리상담 결과를 캡처해서 저장할 수 있는 기능을 추가해 언제든지 꺼내볼 수 있도록 편리성을 높혔습니다.",
@@ -97,7 +107,7 @@ export const projectArray = [
     github: "https://github.com/sxxyeon/GPTherapy",
   },
   {
-    id: 5,
+    id: 6,
     title: "프로필 사이트",
     content: "",
     desc: "현재 사이트인 포트폴리오 프로필 사이트입니다.\r\n 여러 애니메이션 효과를 주기 위해 framer-motion과 react-scroll-animation을 사용했습니다. framer-motion으로는 motion, useScroll, useTransform 기능을 사용해 about 페이지에서의 애니메이션이 가능하게 했고, 텍스트의 움직임 그리고 프로젝트들을 전시할 때 스크롤 시 가로스크롤이 될 수 있도록 작업하였습니다.\r\n전반적으로 심플한 디자인으로,  내부콘텐츠를 보다 명확히 보여줄 수 있도록 원 페이지로 만들었습니다.",
