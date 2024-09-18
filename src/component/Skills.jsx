@@ -11,6 +11,7 @@ const skills = [
   "Typescript",
   "git",
   "github",
+  "vue",
   "vuetify",
   "tailwindcss",
   "bootstrap",
