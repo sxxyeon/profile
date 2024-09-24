@@ -1,5 +1,10 @@
 import { Link } from "react-scroll";
-import { Navigate, Link as RouterLink, useLocation } from "react-router-dom";
+import {
+  Navigate,
+  Link as RouterLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import styled, { css } from "styled-components";
 import { useState } from "react";
 
@@ -123,6 +128,7 @@ const Header = () => {
   };
 
   const { pathname } = useLocation();
+  const nav = useNavigate();
   console.log(pathname);
   return (
     <>
@@ -229,7 +235,9 @@ const Header = () => {
                 ) : (
                   <>
                     <li>
-                      <RouterLink to={"/"}>Home</RouterLink>
+                      <a onClick={(e) => e.preventDefault()}>
+                        <Button onClick={() => nav(-1)}>Back</Button>
+                      </a>
                     </li>
                   </>
                 )}

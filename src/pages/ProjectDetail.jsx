@@ -29,7 +29,17 @@ const ImgBox = styled.div`
     justify-content: space-between;
     gap: 30px;
     .m-img {
-      width: 40%;
+      width: 30%;
+    }
+  }
+
+  .t-img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    .t-img {
+      width: 47%;
     }
   }
 `;
@@ -44,36 +54,62 @@ const ProjectDetail = () => {
   const mimgData = Object.keys(projectImages).filter((key) =>
     key.startsWith("m")
   );
+  const timgData = Object.keys(projectImages).filter((key) =>
+    key.startsWith("t")
+  );
   return (
     <ImgBox>
       {projectImages ? (
         <>
           {imgData.length > 0 && (
-            <div className="img-wrapper">
+            <>
               <h3>PC ver</h3>
-              {/* 일반 img로 시작하는 이미지는 단일로 표시 */}
-              {imgData.map((key, index) => (
-                <img
-                  key={index}
-                  src={projectImages[key]}
-                  alt={`Image ${index + 1}`}
-                />
-              ))}{" "}
-            </div>
+              <div className="img-wrapper">
+                {/* 일반 img로 시작하는 이미지는 단일로 표시 */}
+                {imgData.map((key, index) => (
+                  <img
+                    key={index}
+                    src={projectImages[key]}
+                    alt={`Image ${index + 1}`}
+                  />
+                ))}{" "}
+              </div>
+            </>
           )}
 
-          {/* m으로 시작하는 이미지는 2개씩 나열 */}
-          <h3>mobile ver</h3>
-          <div className="m-img-wrapper">
-            {mimgData.map((key, index) => (
-              <img
-                key={index}
-                src={projectImages[key]}
-                alt={`Image ${index + 1}`}
-                className="m-img"
-              />
-            ))}
-          </div>
+          {/* m으로 시작하는 이미지는 3개씩 나열 */}
+          {mimgData.length > 0 && (
+            <>
+              <h3>mobile ver</h3>
+              <div className="m-img-wrapper">
+                {mimgData.map((key, index) => (
+                  <img
+                    key={index}
+                    src={projectImages[key]}
+                    alt={`Image ${index + 1}`}
+                    className="m-img"
+                  />
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* t으로 시작하는 이미지는 2개씩 나열 */}
+          {timgData.length > 0 && (
+            <>
+              <h3>tablet ver</h3>
+              <div className="t-img-wrapper">
+                {timgData.map((key, index) => (
+                  <img
+                    key={index}
+                    src={projectImages[key]}
+                    alt={`Image ${index + 1}`}
+                    className="t-img"
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </>
       ) : (
         <p>이미지를 찾을 수 없습니다.</p>

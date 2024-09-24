@@ -127,6 +127,12 @@ const BtnBox = styled.div`
 const ModalPopup = ({ modal, setIsModalOpen }) => {
   const { id, title, skills, content, desc, img, url, github, photo } = modal;
   const nav = useNavigate();
+
+  const onClickDetail = () => {
+    nav(`/detail/${id}`);
+    document.body.style.overflowY = "auto";
+  };
+
   return ReactDOM.createPortal(
     <ModalWrap>
       <Modal className={id}>
@@ -152,10 +158,8 @@ const ModalPopup = ({ modal, setIsModalOpen }) => {
               </button>
             )}
             {photo && (
-              <button>
-                <Link to={() => nav(`/detail/${id}`)} target="_blank">
-                  스크린샷
-                </Link>
+              <button onClick={onClickDetail} target="_blank">
+                스크린샷
               </button>
             )}
             {github && (
