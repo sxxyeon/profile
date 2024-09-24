@@ -42,6 +42,15 @@ const ImgBox = styled.div`
       width: 47%;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .m-img {
+      width: 45% !important;
+    }
+    .t-img {
+      width: 100% !important;
+    }
+  }
 `;
 
 const ProjectDetail = () => {

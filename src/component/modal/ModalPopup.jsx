@@ -131,6 +131,7 @@ const ModalPopup = ({ modal, setIsModalOpen }) => {
   const onClickDetail = () => {
     nav(`/detail/${id}`);
     document.body.style.overflowY = "auto";
+    window.scrollTo(0, 0);
   };
 
   return ReactDOM.createPortal(
