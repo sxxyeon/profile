@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Icon } from "@iconify/react";
 
@@ -126,7 +126,7 @@ const BtnBox = styled.div`
 
 const ModalPopup = ({ modal, setIsModalOpen }) => {
   const { id, title, skills, content, desc, img, url, github, photo } = modal;
-  console.log(id);
+  const nav = useNavigate();
   return ReactDOM.createPortal(
     <ModalWrap>
       <Modal className={id}>
@@ -153,7 +153,7 @@ const ModalPopup = ({ modal, setIsModalOpen }) => {
             )}
             {photo && (
               <button>
-                <Link to={`detail/${id}`} target="_blank">
+                <Link to={() => nav(`/detail/${id}`)} target="_blank">
                   스크린샷
                 </Link>
               </button>

@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Navigate, Link as RouterLink, useLocation } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { useState } from "react";
 
@@ -121,6 +121,9 @@ const Header = () => {
   const handleSetActive = (to) => {
     setActiveLink(to);
   };
+
+  const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <>
       <div>
@@ -145,81 +148,91 @@ const Header = () => {
             </div>
             <div className="header_right">
               <ul>
-                <li>
-                  <Link
-                    to={"Home"}
-                    spy={true}
-                    smooth={true}
-                    onSetActive={handleSetActive}
-                  >
-                    <Button
-                      isactive={activeLink === "Home" ? "true" : "false"}
-                      onClick={() => onClickLink("Home")}
-                    >
-                      Home
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={"About"}
-                    spy={true}
-                    smooth={true}
-                    onSetActive={handleSetActive}
-                  >
-                    <Button
-                      isactive={activeLink === "About" ? "true" : "false"}
-                      onClick={() => onClickLink("About")}
-                    >
-                      About
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={"Career"}
-                    spy={true}
-                    smooth={true}
-                    onSetActive={handleSetActive}
-                  >
-                    <Button
-                      isactive={activeLink === "Career" ? "true" : "false"}
-                      onClick={() => onClickLink("Career")}
-                    >
-                      Career
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={"Project"}
-                    spy={true}
-                    smooth={true}
-                    onSetActive={handleSetActive}
-                  >
-                    <Button
-                      isactive={activeLink === "Project" ? "true" : "false"}
-                      onClick={() => onClickLink("Project")}
-                    >
-                      Project
-                    </Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={"Contact"}
-                    spy={true}
-                    smooth={true}
-                    onSetActive={handleSetActive}
-                  >
-                    <Button
-                      isactive={activeLink === "Contact" ? "true" : "false"}
-                      onClick={() => onClickLink("Contact")}
-                    >
-                      Contact
-                    </Button>
-                  </Link>
-                </li>
+                {pathname === "/" ? (
+                  <>
+                    <li>
+                      <Link
+                        to={"Home"}
+                        spy={true}
+                        smooth={true}
+                        onSetActive={handleSetActive}
+                      >
+                        <Button
+                          isactive={activeLink === "Home" ? "true" : "false"}
+                          onClick={() => onClickLink("Home")}
+                        >
+                          Home
+                        </Button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={"About"}
+                        spy={true}
+                        smooth={true}
+                        onSetActive={handleSetActive}
+                      >
+                        <Button
+                          isactive={activeLink === "About" ? "true" : "false"}
+                          onClick={() => onClickLink("About")}
+                        >
+                          About
+                        </Button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={"Career"}
+                        spy={true}
+                        smooth={true}
+                        onSetActive={handleSetActive}
+                      >
+                        <Button
+                          isactive={activeLink === "Career" ? "true" : "false"}
+                          onClick={() => onClickLink("Career")}
+                        >
+                          Career
+                        </Button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={"Project"}
+                        spy={true}
+                        smooth={true}
+                        onSetActive={handleSetActive}
+                      >
+                        <Button
+                          isactive={activeLink === "Project" ? "true" : "false"}
+                          onClick={() => onClickLink("Project")}
+                        >
+                          Project
+                        </Button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={"Contact"}
+                        spy={true}
+                        smooth={true}
+                        onSetActive={handleSetActive}
+                      >
+                        <Button
+                          isactive={activeLink === "Contact" ? "true" : "false"}
+                          onClick={() => onClickLink("Contact")}
+                        >
+                          Contact
+                        </Button>
+                      </Link>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    <li>
+                      <RouterLink to={"/"}>Home</RouterLink>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
           </div>
