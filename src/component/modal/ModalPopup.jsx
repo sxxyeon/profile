@@ -125,7 +125,8 @@ const BtnBox = styled.div`
 `;
 
 const ModalPopup = ({ modal, setIsModalOpen }) => {
-  const { id, title, skills, content, desc, img, url, github } = modal;
+  const { id, title, skills, content, desc, img, url, github, photo } = modal;
+  console.log(id);
   return ReactDOM.createPortal(
     <ModalWrap>
       <Modal className={id}>
@@ -147,6 +148,13 @@ const ModalPopup = ({ modal, setIsModalOpen }) => {
               <button>
                 <Link to={url} target="_blank">
                   방문하기
+                </Link>
+              </button>
+            )}
+            {photo && (
+              <button>
+                <Link to={`detail/${id}`} target="_blank">
+                  스크린샷
                 </Link>
               </button>
             )}

@@ -5,6 +5,7 @@ import { SectionsContainer, Section } from "react-fullpage";
 import Footer from "./component/common/Footer";
 import Header from "./component/common/Header";
 import Main from "./pages/Main";
+import ProjectDetail from "./pages/ProjectDetail";
 const Layout = () => {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Main />} />
+            <Route path="/detail/:id" element={<ProjectDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -7,6 +7,7 @@ export const careerArray = [
     skills: "HTML, CSS, JQUERY, JAVASCRIPT",
     img: "/img/b2b.png",
     url: "https://www.ibkshmall.co.kr/main",
+    photo: true,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const careerArray = [
     skills: "HTML, CSS, JQUERY, JAVASCRIPT",
     img: "/img/dlive.png",
     url: "https://dlivemall.co.kr/m/main",
+    photo: true,
   },
   {
     id: 3,
@@ -33,7 +35,7 @@ export const careerArray = [
     skills: "HTML, SCSS, VUE, VUETIFY, JAVASCRIPT",
     img: "/img/kkulcon.png",
     url: "https://play.google.com/store/apps/details?id=kr.co.koreaecom.evms.bizmall&hl=ko&pli=1",
-    //github: "https://github.com/sxxyeon/kkulcon",
+    photo: true,
   },
   {
     id: 5,

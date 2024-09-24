@@ -135,12 +135,6 @@ const ProjectList = ({ data }) => {
   }, [isModalOpen]);
 
   useEffect(() => {
-    window.addEventListener("scroll", () =>
-      console.log({ scrollYProgress: scrollYProgress.current, scrollY })
-    );
-  }, [scrollY, scrollYProgress]);
-
-  useEffect(() => {
     if (!carouselRef || !carouselRef.current) return;
     const parent = carouselRef.current.parentElement;
     const scrollbarWidth =
