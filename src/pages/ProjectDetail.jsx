@@ -29,7 +29,7 @@ const ImgBox = styled.div`
     justify-content: space-between;
     gap: 30px;
     .m-img {
-      width: 45%;
+      width: 40%;
     }
   }
 `;
