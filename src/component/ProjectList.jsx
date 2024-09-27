@@ -120,9 +120,17 @@ const ProjectList = ({ data }) => {
               > div {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 5px;
                 .main {
                   font-size: 1.5rem;
+                }
+                .sub {
+                  font-size: 13px;
+                }
+              }
+              .skill {
+                p {
+                  font-weight: bold;
                 }
               }
               p {
@@ -258,7 +266,6 @@ const ProjectList = ({ data }) => {
                           <h3 className="main">{item.title}</h3>
                         </div>
                         <div className="skill">
-                          <h4>기술 스택</h4>
                           <p>{item.skills}</p>
                         </div>
                         <div className="desc">
