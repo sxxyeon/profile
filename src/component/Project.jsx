@@ -41,7 +41,7 @@ const ProjectWrap = styled.div`
     }
   }
   @media only screen and (max-width: 1000px) {
-    padding: 0 5% 0;
+    padding: 100px 5% 50px;
   }
 `;
 
