@@ -92,7 +92,7 @@ export const projectArray = [
     id: 4,
     title: "mylog",
     content: "",
-    desc: "vue3를 활용한 간단한 블로그 게시판 앱 입니다. 목록조회, 글 쓰기, 수정, 삭제, 댓글 달기 등의 기능을 수행할 수 있습니다.",
+    desc: "vue3를 활용한 블로그 게시판 앱 입니다. 목록조회, 글 쓰기, 수정, 삭제, 댓글 달기, 좋아요한 글 저장 등의 기능을 수행할 수 있습니다.",
     skills: "VUE3, BOOTSTRAP, JAVASCRIPT",
     img: "/img/vueboard.png",
     url: "https://vue-board-six.vercel.app/#/",
