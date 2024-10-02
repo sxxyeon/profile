@@ -21,15 +21,16 @@ const ImgBox = styled.div`
     gap: 30px;
   }
   img {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .m-img-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+    grid-gap: 30px;
     .m-img {
-      width: 30%;
+      width: 100%;
+      height: fit-content;
     }
   }
 
