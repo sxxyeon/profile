@@ -70,7 +70,7 @@ const ProjectList = ({ data }) => {
     .carousel {
       display: flex;
       flex-direction: ${isMobile ? "column" : "row"};
-      gap: ${isMobile ? "40vw" : "10vw"};
+      gap: ${isMobile ? "40vw" : "15vw"};
       align-items: ${isMobile ? "center" : "center"};
 
       .carousel_arrow {
@@ -90,7 +90,7 @@ const ProjectList = ({ data }) => {
 
         .project_cont {
           display: flex;
-          gap: ${isMobile ? "40px" : "50px"};
+          gap: ${isMobile ? "20px" : "40px"};
           flex-direction: ${isMobile ? "column" : "row"};
           justify-content: ${isMobile ? "center" : "space-around"};
           .project_img {
