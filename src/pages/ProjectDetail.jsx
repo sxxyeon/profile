@@ -45,11 +45,18 @@ const ImgBox = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .img-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+
     .m-img-wrapper {
       grid-template-columns: repeat(auto-fill, minmax(40%, auto));
       gap: 10px;
       .m-img {
         //width: 45% !important;
+        height: auto !important;
       }
     }
     .t-img {
