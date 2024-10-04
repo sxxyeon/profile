@@ -27,9 +27,12 @@ const ImgBox = styled.div`
     box-shadow: 0 2px 10px 5px rgb(0, 0, 0, 20%);
   }
   .m-img-wrapper {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, auto));
-    grid-gap: 30px;
+    grid-gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     .m-img {
       width: 100%;
       height: fit-content;
