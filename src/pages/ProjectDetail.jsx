@@ -23,6 +23,8 @@ const ImgBox = styled.div`
   img {
     width: 90%;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 5px rgb(0, 0, 0, 20%);
   }
   .m-img-wrapper {
     display: grid;
