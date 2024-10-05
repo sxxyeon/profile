@@ -103,23 +103,6 @@ const ProjectDetail = () => {
             </>
           )}
 
-          {/* m으로 시작하는 이미지는 3개씩 나열 */}
-          {mimgData.length > 0 && (
-            <>
-              <h3>mobile ver</h3>
-              <div className="m-img-wrapper">
-                {mimgData.map((key, index) => (
-                  <img
-                    key={index}
-                    src={projectImages[key]}
-                    alt={`Image ${index + 1}`}
-                    className="m-img"
-                  />
-                ))}
-              </div>
-            </>
-          )}
-
           {/* t으로 시작하는 이미지는 2개씩 나열 */}
           {timgData.length > 0 && (
             <>
@@ -131,6 +114,23 @@ const ProjectDetail = () => {
                     src={projectImages[key]}
                     alt={`Image ${index + 1}`}
                     className="t-img"
+                  />
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* m으로 시작하는 이미지는 3개씩 나열 */}
+          {mimgData.length > 0 && (
+            <>
+              <h3>mobile ver</h3>
+              <div className="m-img-wrapper">
+                {mimgData.map((key, index) => (
+                  <img
+                    key={index}
+                    src={projectImages[key]}
+                    alt={`Image ${index + 1}`}
+                    className="m-img"
                   />
                 ))}
               </div>

@@ -73,7 +73,7 @@ export const projectArray = [
     id: 8,
     title: "마이비",
     content: "",
-    desc: "넷플릭스와 비슷하지만 다른 영화 정보 공유 앱입니다.\r\n  Tmdb api key를 발급받아  tmdb의 db를 이용하여 제작했습니다. 메인에서는 여러 카테고리의 영화 리스트를 제공하며 각 영화의 상세페이지에서는 자세한 overview, 찜 버튼, 트레일러 영상, 별점과 함께 리뷰를 남길 수 있는 관람평 기능이 있습니다.\r\n Json server를 활용해 회원가입과 로그인기능 또한 구현해보았습니다. 찜을 누른 영화는 찜 목록에서 확인 및 삭제가 가능합니다.",
+    desc: "영화 정보 공유 앱입니다.\r\n  Tmdb api key를 발급받아  tmdb의 db를 이용하여 제작했습니다. 메인에서는 여러 카테고리의 영화 리스트를 제공하며 각 영화의 상세페이지에서는 자세한 overview, 찜 버튼, 트레일러 영상, 별점과 함께 리뷰를 남길 수 있는 관람평 기능이 있습니다.\r\n Json server를 활용해 회원가입과 로그인기능 또한 구현해보았습니다. 찜을 누른 영화는 찜 목록에서 확인 및 삭제가 가능합니다.",
     skills: "NEXT.JS, CSS MODULE, JAVASCRIPT",
     img: "/img/myvie.png",
     url: "https://myvie.vercel.app/",
