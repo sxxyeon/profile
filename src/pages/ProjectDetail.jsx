@@ -57,7 +57,7 @@ const ImgBox = styled.div`
     }
 
     .m-img-wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(40%, auto));
+      //grid-template-columns: repeat(auto-fill, minmax(40%, auto));
       gap: 10px;
       .m-img {
         //width: 45% !important;
@@ -91,7 +91,7 @@ const ProjectDetail = () => {
             <>
               <h3>PC ver</h3>
               <div className="img-wrapper">
-                {/* 일반 img로 시작하는 이미지는 단일로 표시 */}
+                {/* 일반 img로 시작하는 이미지는 1개씩 나열 */}
                 {imgData.map((key, index) => (
                   <img
                     key={index}
@@ -120,7 +120,7 @@ const ProjectDetail = () => {
             </>
           )}
 
-          {/* m으로 시작하는 이미지는 3개씩 나열 */}
+          {/* m으로 시작하는 이미지는 1개씩 나열 */}
           {mimgData.length > 0 && (
             <>
               <h3>mobile ver</h3>
