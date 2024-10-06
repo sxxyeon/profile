@@ -34,7 +34,7 @@ const ImgBox = styled.div`
     flex-direction: column;
     gap: 20px;
     .m-img {
-      width: 100%;
+      width: 80%;
       height: fit-content;
     }
   }
@@ -60,7 +60,7 @@ const ImgBox = styled.div`
       //grid-template-columns: repeat(auto-fill, minmax(40%, auto));
       gap: 10px;
       .m-img {
-        //width: 45% !important;
+        width: 100% !important;
         height: auto !important;
       }
     }
