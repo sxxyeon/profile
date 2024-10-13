@@ -88,8 +88,10 @@ export const ImgArray = [
     img4: "/img/screen/9_4.png",
     img5: "/img/screen/9_5.png",
     img6: "/img/screen/9_6.png",
+    img7: "/img/screen/9_7.png",
     mimg1: "/img/screen/m9_1n.png",
     mimg2: "/img/screen/m9_2n.png",
+    mimg3: "/img/screen/m9_3n.png",
   },
   {
     id: 10,
