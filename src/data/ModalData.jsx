@@ -16,7 +16,6 @@ export const careerArray = [
     desc: "B2C 서비스입니다. 딜라이브를 이용하는 고객들을 위한 쇼핑몰로, 다양한 상품을 제공합니다. UI 구축 참여 및 유지보수 작업을 하였습니다. \r\n퍼블리싱 외의 작업으로는, 웹화면에 백오피스 카테고리 데이터를 가져와 배치하였고 사용자가 접속한기기(모바일,데스크탑)을 구분하여 각각에 적용되는 서비스페이지가 다를 수 있게 작업하였습니다.",
     skills: "HTML, CSS, JQUERY, JAVASCRIPT",
     img: "/img/dlive.png",
-    url: "https://dlivemall.co.kr/m/main",
     photo: true,
   },
   {

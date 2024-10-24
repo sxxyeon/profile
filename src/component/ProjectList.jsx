@@ -157,10 +157,10 @@ const ProjectList = ({ data }) => {
       font-size: 16px;
       font-weight: 500;
       box-sizing: border-box;
+      padding: 15px 10px;
       cursor: pointer;
       a {
         display: block;
-        padding: 15px 10px;
       }
     }
     button:nth-child(2) {
