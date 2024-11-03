@@ -33,7 +33,7 @@ export const careerArray = [
     desc: "모바일티켓 앱입니다. 다양한 모바일티켓을 구매할 수 있으며, 개인이 아니라 기업에서 대량의 티켓을 구매하고자 할 때 사용하는 앱 서비스입니다.\r\n 지금까지와는 다르게 vue로 개발했기에 vuetify를 이용, 컴포넌트들을 분리 및 작업하였습니다. \r\n github은 개발자와 협업시 사용하였습니다. vue와 vuetify를 활용한 전반적인 모든 ui를 담당하였습니다. 플레이스토어에서 다운받은 앱으로 서비스 이용이 가능합니다.",
     skills: "HTML, SCSS, VUE, VUETIFY, JAVASCRIPT",
     img: "/img/kkulcon.png",
-    url: "https://play.google.com/store/apps/details?id=kr.co.koreaecom.evms.bizmall&hl=ko&pli=1",
+    //url: "https://play.google.com/store/apps/details?id=kr.co.koreaecom.evms.bizmall&hl=ko&pli=1", 스토어에서 내려감.
     photo: true,
   },
   // {
@@ -101,16 +101,16 @@ export const projectArray = [
     github: "https://github.com/sxxyeon/vueBoard",
     photo: true,
   },
-  {
-    id: 11,
-    title: "GPTherapy",
-    content: "",
-    desc: "chat GPT api를 사용하여 만든 심리상담 앱입니다.\r\n 사용자가 오늘 있었던 일을 입력하면, 미리 작성했던 프롬프트로 gpt api를 호출해 요약문, 회고문, 사용자가 느낀 감정, 심리 분석, 조언 등 사용자가 입력한 글에 기반하여 반응 글이 출력되도록 작업하였습니다. \r\n또한 html2canvas 를 사용, 해당 심리상담 결과를 캡처해서 저장할 수 있는 기능을 추가해 언제든지 꺼내볼 수 있도록 편리성을 높혔습니다.",
-    skills: "REACT, ANTD, STYLED-COMPONENT, JAVASCRIPT",
-    img: "/img/gpt.png",
-    url: "https://gp-therapy.vercel.app/",
-    github: "https://github.com/sxxyeon/GPTherapy",
-  },
+  // {
+  //   id: 11,
+  //   title: "GPTherapy",
+  //   content: "",
+  //   desc: "chat GPT api를 사용하여 만든 심리상담 앱입니다.\r\n 사용자가 오늘 있었던 일을 입력하면, 미리 작성했던 프롬프트로 gpt api를 호출해 요약문, 회고문, 사용자가 느낀 감정, 심리 분석, 조언 등 사용자가 입력한 글에 기반하여 반응 글이 출력되도록 작업하였습니다. \r\n또한 html2canvas 를 사용, 해당 심리상담 결과를 캡처해서 저장할 수 있는 기능을 추가해 언제든지 꺼내볼 수 있도록 편리성을 높혔습니다.",
+  //   skills: "REACT, ANTD, STYLED-COMPONENT, JAVASCRIPT",
+  //   img: "/img/gpt.png",
+  //   url: "https://gp-therapy.vercel.app/",
+  //   github: "https://github.com/sxxyeon/GPTherapy",
+  // },
   {
     id: 12,
     title: "프로필 사이트",

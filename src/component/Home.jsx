@@ -75,7 +75,6 @@ const Home = () => {
         animate={replay ? "visible" : "hidden"}
         className="wavy-text-container"
       >
-        {/* <span className="sub">HI, I'M</span> */}
         <motion.span variants={child}>
           FRONT-END
           <br />
