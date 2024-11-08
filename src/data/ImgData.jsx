@@ -95,7 +95,9 @@ export const ImgArray = [
     img4: "/img/screen/10_4.png",
     img5: "/img/screen/10_5.png",
     img6: "/img/screen/10_6.png",
+    img7: "/img/screen/10_7.png",
     mimg1: "/img/screen/m10_1n.png",
     mimg2: "/img/screen/m10_2n.png",
+    mimg3: "/img/screen/m10_3n.png",
   },
 ];
